@@ -12,7 +12,7 @@ import (
 
 	_ "github.com/sbaildon/bot/commands/hello"
 	_ "github.com/sbaildon/bot/commands/roles"
-	_ "github.com/sbaildon/bot/commands/list"
+	_ "github.com/sbaildon/bot/commands/help"
 )
 
 func main() {

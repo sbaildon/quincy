@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	commands.AddCommand("list", &Command{})
+	commands.AddCommand("help", &Command{})
 }
 
 type Command struct {
