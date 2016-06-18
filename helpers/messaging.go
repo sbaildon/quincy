@@ -20,3 +20,10 @@ func PrivateMessage(session *discordgo.Session, user *discordgo.User, message st
         session.ChannelMessageSend(userChannel.ID, message)
         session.ChannelDelete(userChannel.ID)
 }
+
+func DeleteMessage(session *discordgo.Session, message *discordgo.Message) {
+	err := session.ChannelMessageDelete(message.ChannelID, message.ID)
+	if err != nil {
+		fmt.Printf("Unable to delete message")
+	}
+}
