@@ -15,6 +15,10 @@ func SetupHandlers(session *discordgo.Session) {
 }
 
 func onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
+	if (len(m.Attachments) > 0) ||  (len(m.Embeds) > 0) {
+		return
+	}
+
 	fmt.Printf("%20s %20s %20s > %s\n", m.ChannelID, time.Now().Format(time.Stamp), m.Author.Username, m.Content)
 	message := m.Message
 
