@@ -60,6 +60,7 @@ func listRoles(session *discordgo.Session, message *discordgo.Message) {
 	response = response[:len(response)-2] + "]"
 
 	helpers.PrivateMessage(session, message.Author, response)
+	helpers.DeleteMessage(session, message)
 }
 
 func assign(session *discordgo.Session, message *discordgo.Message) {
