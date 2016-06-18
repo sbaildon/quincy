@@ -11,7 +11,7 @@ import (
 	"github.com/sbaildon/quincy/handlers"
 
 	_ "github.com/sbaildon/quincy/commands/hello"
-	_ "github.com/sbaildon/quincy/commands/roles"
+	_ "github.com/sbaildon/quincy/commands/role"
 	_ "github.com/sbaildon/quincy/commands/help"
 )
 
