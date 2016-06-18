@@ -3,7 +3,7 @@ package hello
 import (
 	"fmt"
 
-	"github.com/sbaildon/bot/commands"
+	"github.com/sbaildon/quincy/commands"
 	"github.com/bwmarrin/discordgo"
 )
 

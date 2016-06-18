@@ -6,7 +6,7 @@ import (
 
 	"github.com/bwmarrin/discordgo"
 
-	"github.com/sbaildon/bot/commands"
+	"github.com/sbaildon/quincy/commands"
 )
 
 func SetupHandlers(session *discordgo.Session) {

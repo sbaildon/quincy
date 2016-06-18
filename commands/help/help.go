@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/sbaildon/bot/commands"
-	"github.com/sbaildon/bot/helpers"
+	"github.com/sbaildon/quincy/commands"
+	"github.com/sbaildon/quincy/helpers"
 	"github.com/bwmarrin/discordgo"
 )
 

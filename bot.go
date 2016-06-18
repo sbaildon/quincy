@@ -8,11 +8,11 @@ import (
 
 	"github.com/bwmarrin/discordgo"
 
-	"github.com/sbaildon/bot/handlers"
+	"github.com/sbaildon/quincy/handlers"
 
-	_ "github.com/sbaildon/bot/commands/hello"
-	_ "github.com/sbaildon/bot/commands/roles"
-	_ "github.com/sbaildon/bot/commands/help"
+	_ "github.com/sbaildon/quincy/commands/hello"
+	_ "github.com/sbaildon/quincy/commands/roles"
+	_ "github.com/sbaildon/quincy/commands/help"
 )
 
 func main() {
