@@ -28,7 +28,7 @@ func onMessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 func onGuildCreate(s *discordgo.Session, event *discordgo.GuildCreate) {
 	for _, channel := range event.Guild.Channels {
 		if channel.ID == event.Guild.ID {
-			s.ChannelMessageSend(channel.ID, "Yawk yawk yawk")
+			// Do something in new guild
 			return
 		}
 	}
