@@ -108,6 +108,7 @@ func assign(session *discordgo.Session, message *discordgo.Message) {
 	}
 
 	session.GuildMemberEdit(channel.GuildID, userId, memb_roles)
+	helpers.DeleteMessage(session, message)
 }
 
 func unassign(session *discordgo.Session, message *discordgo.Message) {
@@ -146,6 +147,7 @@ func unassign(session *discordgo.Session, message *discordgo.Message) {
 	}
 
 	session.GuildMemberEdit(channel.GuildID, userId, memb_roles)
+	helpers.DeleteMessage(session, message)
 }
 
 func createRole(session *discordgo.Session, message *discordgo.Message) {
